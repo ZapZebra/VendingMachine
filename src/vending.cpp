@@ -267,7 +267,7 @@ string Vending::RemoveItem(string newItem) {
 }
 
 bool Vending::CheckPassword(string password) {
-	ifstream passwordLocation("assets/secure/secretPass.txt");	//gets the stored password and reads the file
+	ifstream passwordLocation("./assets/secure/secretPass.txt");	//gets the stored password and reads the file
 	string read;
 	if (passwordLocation.is_open()) {
 		getline(passwordLocation, read);

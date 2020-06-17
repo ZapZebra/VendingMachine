@@ -2,7 +2,7 @@
 
 int main() {
 	Vending machine;
-	if (machine.ReadContents("assets/vendingContents.txt")) {	//opens and reads stored contents of the vending machine, exits if it can't
+	if (machine.ReadContents("./assets/vendingContents.txt")) {	//opens and reads stored contents of the vending machine, exits if it can't
 		string mode = "user";	//mode variable allows easy switching between different modes with different available commands
 		string command;
 		string notification = "---";	//storage for returned notifications from called functions
@@ -113,7 +113,7 @@ int main() {
 
 		}
 
-		machine.SaveChanges("assets/vendingContents.txt");	//save any changes made to the stock before exiting
+		machine.SaveChanges("./assets/vendingContents.txt");	//save any changes made to the stock before exiting
 		cout << "Thank you for using VENDING MACHINE" << '\n';
 	}
 	else{ cout << "Error, could not read contents file" << '\n'; }
