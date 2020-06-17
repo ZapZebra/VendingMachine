@@ -1,0 +1,3 @@
+Dairy Milk, œ0.70, 4
+Twirl, œ0.30, 7
+Mars Bar, œ0.70, 6
